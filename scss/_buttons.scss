@@ -1,0 +1,34 @@
+
+//buttons
+.btn-green{
+    background-color: $darkGreen;
+    color: $backgrundC;
+    &:hover{
+        background-color: map-get($map: $paleta, $key:"backgrundC");
+    }
+}
+
+
+//botones extend
+.botonCompra{
+    @extend .btn-green;
+    background-color: map-get($map: $paleta, $key:"fontNav");
+    padding: 15px;
+    color: map-get($map: $paleta, $key:"black");
+    font-size: $botonCompra;
+    &:hover{
+        background-color: $red;
+        color: $backgrundC !important;
+        font-size: $botonCompra;
+        transition-duration: 150ms;
+    }
+    @media (max-width: 992px) {
+        padding: 0;
+        &:active{
+            background-color: $red;
+            color: $backgrundC !important;
+            transition-duration: 150ms;
+        }
+    }
+}
+

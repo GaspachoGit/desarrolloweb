@@ -1,0 +1,16 @@
+nav{
+    img{
+        width: 200px;
+        @media (min-width: 215px) and (max-width: 350px){
+            width: 140px;
+        }
+    }
+    ul{
+        li{
+            font-size: $navBut;
+            a{
+                color: map-get($map: $paleta, $key:"fontNav") !important;
+            }
+        }
+    }
+}

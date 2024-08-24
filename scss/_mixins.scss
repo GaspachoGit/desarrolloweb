@@ -1,0 +1,11 @@
+//mixins
+@mixin titulos($fondo, $padding, $color){
+    background-color: $fondo;
+    border-radius: 8px;
+    display: inline-block;
+    color: $color;
+    padding: $padding;
+}
+// h1{
+//     @include titulo($bg-h1, 0.3rem, $backgrundC)
+// }

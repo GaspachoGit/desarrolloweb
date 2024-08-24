@@ -1,0 +1,8 @@
+//footer
+.img-footer{
+    width: 120px;
+    @media (min-width: 215px) and (max-width: 400px) {
+        width: 70px;
+    }
+}
+
